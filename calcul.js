@@ -103,3 +103,10 @@ function add_calc(id,n)
         return true;
 }
 
+function initialiser_calc(id)
+{
+        $id(id+'_resultat').value=0;
+        calc_array[id] = new Array('=',1,'0','0',0);
+        document.getElementById(id+'_resultat').focus();
+        return true;
+}
